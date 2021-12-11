@@ -1,12 +1,15 @@
 import React from "react";
-import {Text, View, StyleSheet} from "react-native";
+import {Text, View, StyleSheet, FlatList} from "react-native";
 import Message from "../components/Message";
 import chatRoomData from '../assets/dummy-data/Chats';
 
 export default function ChatRoomScreen() {
  return (
      <View style={styles.page}>
-         <Message message={chatRoomData.messages[0]} />
+         <FlatList 
+            data = {chatRoomData.messages}
+            renderItem={({item}) => <Message message={item} />}
+         />
      </View>
  )
 };

@@ -59,7 +59,7 @@ export default {
 		},
 	}, {
 		id: 'm7',
-		content: 'btw, SpaceX is interested in buying notJust.dev!',
+		content: 'btw, SpaceX is interested in buying blackhole.edit!',
 		createdAt: '2020-10-03T14:53:00.000Z',
 		user: {
 			id: 'u2',
