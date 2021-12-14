@@ -12,13 +12,7 @@ const Message = ({message}) => {
     const isMe = message.user.id == myID; 
 
     return (
-        <View style={[
-            styles.container, {
-                backgroundColor: isMe ? grey : blue,
-                marginLeft: isMe ? 'auto' : 10, 
-                marginRight: isMe ? 10 : 'auto'
-            }]}
-        > 
+        <View style={[styles.container, isMe ? styles.rightContainer : styles.leftContainer]}> 
             <Text style={{color: isMe ? 'black' : 'white'}}>{message.content}</Text>
         </View>
     )
@@ -26,7 +20,6 @@ const Message = ({message}) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#3777f0',
         padding: 10,
         margin: 10,
         borderRadius: 10,

@@ -35,7 +35,7 @@ export default {
 		},
 	}, {
 		id: 'm4',
-		content: 'Good as well, preparing for the stream now.',
+		content: 'Good as well, preparing for the code now.',
 		createdAt: '2020-10-03T14:50:00.000Z',
 		user: {
 			id: 'u1',
